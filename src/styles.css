@@ -1,0 +1,54 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+$primary-color: #0080ff;
+$secondary-color: #333;
+
+.registration-form {
+  max-width: 500px;
+  margin: 0 auto;
+ 
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: $secondary-color;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid $secondary-color;
+      
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+      }
+    }
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
